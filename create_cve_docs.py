@@ -15,8 +15,8 @@ OUTPUT_BASE = 'D-link'
 # 特殊映射：用于处理无法自动匹配的CVE
 SPECIAL_MAPPING = {
     'CVE-2025-63301': 'linux：.md',  # D-Link DIR-852 漏洞
-    'CVE-2025-70223': 'DIR513_formAdvNetwork.md',  # 明确映射
     'CVE-2025-70252': 'AC6_formWifiWpsStart.md',  # Tenda AC6
+    'CVE-2025-8159': 'DIR513_formLanguageChange0.md',  # 选择第一个匹配文件
     'CVE-2026-24101': None,  # 暂无对应文件，跳过
 }
 
